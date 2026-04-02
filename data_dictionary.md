@@ -28,3 +28,14 @@ This document describes the structure and variables of the raw dataset used for 
 * **Inflight entertainment:** Rating of media options.
 * **Cleanliness:** Rating of the environment's hygiene.
 * **Baggage handling:** Rating of luggage delivery and care.
+
+# 📖 Data Dictionary: Airline CX Operations
+
+| Variable | Type | Category | Business Impact |
+| :--- | :--- | :--- | :--- |
+| **satisfaction** | Categorical | Target | Core KPI for brand health. |
+| **Customer Type** | Categorical | Demographics | Used for segmentation and loyalty analysis. |
+| **Age / Class** | Numeric/Cat | Demographics | Correlating demographic profiles with service expectations. |
+| **Departure Delay** | Numeric | Operational | Leading indicator of friction and dissatisfaction. |
+| **Arrival Delay** | Numeric | Operational | Measures service delivery failure. |
+| **Service Ratings** | Ordinal (0-5)| CX Touchpoints | Granular data to identify specific process gaps (e.g., Wifi, Seat comfort). |
