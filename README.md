@@ -14,10 +14,16 @@ The dataset contains customer feedback and operational metrics, including:
 * **Target Variable:** Overall Satisfaction (Satisfied vs. Neutral/Dissatisfied).
 * **Loyalty Metric:** Customer Type (Loyal vs. Disloyal Customer).
 
-### 🚀 Strategic Approach (In Progress)
-Currently working on the feature engineering phase to create business-centric metrics:
-1. **Bottleneck Mapping:** Creating logical flags for critical delay thresholds (e.g., waiting times > 15 minutes) to isolate operational failures.
-2. **Microjourney Scoring:** Aggregating specific touchpoint scores to evaluate the overall service delivery experience.
-3. **Loyalty Impact Analysis:** Correlating the service scores with the customer's likelihood to return (Retention Rate).
+### 🚀 Key Executive Insights & Business Impact
+Following the data manipulation and dashboarding phase, the following strategic insights were extracted for CX Operations:
+
+1. **The Bottleneck Threshold (Critical Delay):** Wait-time analysis revealed that operational delays exceeding the **15-minute mark** act as a catalyst for churn. At this threshold, the satisfaction ratio entirely inverts, with dissatisfied customers outnumbering satisfied ones regardless of subsequent service recovery efforts.
+2. **The Digital Friction (Microjourney Failure):** Pivot analysis demonstrated a false positive in service delivery. While physical execution (In-flight service) scored poorly among detractors (2.9/5), the actual root cause of churn originates in the digital planning phase. Dissatisfied customers reported critical friction in Booking, Check-in, and Online Support (averaging **2.7/5**).
+
+### 🛠️ Execution & Methodology
+* **ETL & Handling:** Raw data converted via Advanced Excel. Null values in arrival delays were logically imputed based on departure correlations to preserve CX feedback rows.
+* **Feature Engineering:** Deployed logical `IF` statements to segment delay thresholds and `AVERAGE` models to group service variables into `Planning_Score` vs `Delivery_Score`.
+* **Visualization:** Built an Executive Dashboard using 100% Stacked Column and Clustered Column PivotCharts to highlight friction gaps and wait-time impact.
+
 ---
-*Status: 📊 Data Cleaning and Pivot Table Analysis Phase.*
+*Status: 🟢 **Completed** - Dashboard and Executive Summary ready for presentation.*
