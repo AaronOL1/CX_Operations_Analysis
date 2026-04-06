@@ -19,6 +19,5 @@ Currently working on the feature engineering phase to create business-centric me
 1. **Bottleneck Mapping:** Creating logical flags for critical delay thresholds (e.g., waiting times > 15 minutes) to isolate operational failures.
 2. **Microjourney Scoring:** Aggregating specific touchpoint scores to evaluate the overall service delivery experience.
 3. **Loyalty Impact Analysis:** Correlating the service scores with the customer's likelihood to return (Retention Rate).
-
 ---
 *Status: 📊 Data Cleaning and Pivot Table Analysis Phase.*
